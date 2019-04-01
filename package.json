@@ -27,5 +27,6 @@
   "bugs": {
     "url": "https://github.com/GagnantN/array-map-filter/issues"
   },
-  "homepage": "https://github.com/GagnantN/array-map-filter#readme"
+  "homepage": "https://github.com/GagnantN/array-map-filter#readme",
+  "dependencies": {}
 }

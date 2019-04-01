@@ -59,8 +59,30 @@ En sortie:
 
  */
 
+// function mv(ob) {
+//   if (ob.rating < 60) {
+//     return ("label" + ": rotten, " + "name: " + ob.name + " rating: " + ob.rating);
+//   } else if (ob.rating >= 60 && ob.rating <= 75) {
+//     return ("label: " + "fresh, " + "name: " + ob.name + " rating: " + ob.rating);
+//   } else if (ob.rating > 75) {
+//     return ("label: " + "certified fresh, " + "name: " + ob.name + " rating: " + ob.rating);
+//   }
+// }
+
+// function getMoviesFreshness(movies) {
+//   return movies.map(mv);
+// }
+
 function getMoviesFreshness(movies) {
+  return movies.map(
+    function funk(element) {
+      if (element.rating < 60) { element.label = 'rotten'; }
+      else if (element.rating >= 60 && element.rating <= 75) { element.label = 'fresh'; }
+      else if (element.rating > 75) { element.label = 'certified fresh'; }
+      return element;
+    });
 }
+
 
 
 

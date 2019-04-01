@@ -42,10 +42,24 @@ En sortie: [
 
  */
 
+function funk(element) {
+  if (element.isVegetarian === true) {
+    return element.food + " is suitable for vegetarians";
+  } else {
+    return element.food + " is not suitable for vegetarians";
+  }
+}
+
 function getFoodCategories(foods) {
+  return foods.map(funk)
 }
 
 
+// Version Simple 
+
+// function getFoodCategories(foods) {
+//   return foods.map(arg => arg.isVegetarian ? arg.food + " is suitable for vegetarians" : arg.food + " is not suitable for vegetarians")
+//   }
 
 // Ne pas modifier l'export
 module.exports = getFoodCategories;

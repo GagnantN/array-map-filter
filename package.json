@@ -1,7 +1,7 @@
 {
   "name": "quete-map-filter",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Installation",
   "main": "index.js",
   "directories": {
     "test": "tests"
@@ -19,5 +19,13 @@
     "reporters": [
       "jest-check-cross-reporter"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GagnantN/array-map-filter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GagnantN/array-map-filter/issues"
+  },
+  "homepage": "https://github.com/GagnantN/array-map-filter#readme"
 }

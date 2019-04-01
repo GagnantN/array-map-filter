@@ -15,8 +15,14 @@ Exemple d'entrée:
 
  */
 
+let numbers = [-12, -10, -7, -1, 5, 8, 11, 15, 20, 27];
+let n = 5;
+
 function getMultiplesOf(numbers, n) {
+  return (numbers.filter(num => num % n === 0));
 }
+console.log(getMultiplesOf(numbers));
+
 
 // Ne pas modifier l'export
 module.exports = getMultiplesOf;

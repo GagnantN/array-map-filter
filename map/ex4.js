@@ -52,6 +52,17 @@ Tableau de sortie correspondant (toFixed transforme les nombres en chaînes)
 */
 
 function getCirclesProperties(radiuses) {
+  const pi = Math.PI;
+  let i = radiuses.map(rad =>{
+    return rad = {
+      radius: rad,                // Tableau d'objet pas de point virgule ni =.
+      circumference : (2 * pi * rad ).toFixed(3),
+      surface : (pi * rad * rad).toFixed(3),
+    }
+  })
+
+  return i;
+
 }
 
 

@@ -25,6 +25,7 @@ Sortie attendue:
 */
 
 function getCampusesTeachingReact(campuses) {
+  return campuses.filter(x => x.curriculums.indexOf("JS/React")> -1).map(y => y.city)
 }
 
 module.exports = getCampusesTeachingReact;
